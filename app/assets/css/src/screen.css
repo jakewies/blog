@@ -399,7 +399,6 @@ pre {
     box-sizing: border-box;
     margin: 0 0 1.75em 0;
     width: 100%;
-    padding: 10px;
     font-family: Inconsolata, monospace, sans-serif;
     font-size: 0.9em;
     white-space: pre;
@@ -858,7 +857,7 @@ button {
 
 .nav a {
     text-decoration: none;
-    color: #333E51;
+    color: #485772;
 }
 
 .nav a:hover {
@@ -909,11 +908,11 @@ button {
 
 .thumb-img {
     width: 100%;
-    height: 100px;
+    height: 75px;
     background:
         center center / cover
         no-repeat
-        #333E51;
+        #485772;
 }
 
 .posts-container .post-title {
@@ -1101,7 +1100,7 @@ button {
     }
 
     .contact-header {
-        background-color: #93B7BE;
+        background-color: #485772;
     }
 
     .page-header h1 {
@@ -1128,7 +1127,7 @@ button {
     }
 
     .now-header {
-        background-color: #333E51;
+        background-color: #93B7BE;
     }
 
     .now-date {
@@ -1557,6 +1556,10 @@ button {
 
     .now-header h1 {
         font-size: 3.4rem;
+    }
+
+    .thumb-img {
+        height: 60px;
     }
 }
 

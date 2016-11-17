@@ -105,7 +105,7 @@ gulp.task('js:dev', function(callback) {
 * Run Ghost theme locally
 *
 **************************/
-gulp.task('ghost:dev', ['ghost:start'], function (callback) {
+gulp.task('ghost:dev', ['css:dev', 'ghost:start'], function (callback) {
 	// watch for file and changes and reload browser
 	gulp.watch('app/assets/css/src/*.css', ['css:dev', 'browsersync:reload']);
 	gulp.watch('app/assets/js/src/*.js', ['js:dev', 'browsersync:reload']);
