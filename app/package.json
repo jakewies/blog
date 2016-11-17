@@ -1,0 +1,7 @@
+{
+  "name": "Blok Theme",
+  "version": "1.0.0",
+  "description": "A custom theme built on the Ghost Platform",
+  "repository": "jake-wies/ghost-blok-theme",
+  "license" : "MIT"
+}

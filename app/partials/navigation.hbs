@@ -1,0 +1,19 @@
+<div class="nav-wrap">
+    <div class="nav">
+        {{#if @blog.logo}}
+            <a class="blog-logo nav-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Blog Logo" /></a>
+        {{/if}}
+        <ul>
+            {{#foreach navigation}}
+                <li class="nav-{{slug}}{{#if current}} nav-current{{/if}}" role="presentation"><a href="{{url absolute="true"}}">{{label}}</a></li>
+            {{/foreach}}
+        </ul>
+        <div class="social">
+            <a href="https://github.com/jake-wies" class="fa fa-github-alt fa-lg"></a>
+            <a href="https://codepen.io/jakewies" class="fa fa-codepen fa-lg"></a>
+            <a href="https://twitter.com/jakewies" class="fa fa-twitter fa-lg"></a>
+            <a href="http://feeds.feedburner.com/JakeWiesler" class="fa fa-rss fa-lg"></a>
+        </div>
+
+    </div>
+</div>

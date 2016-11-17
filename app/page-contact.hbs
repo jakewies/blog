@@ -1,0 +1,33 @@
+{{!< default}}
+
+{{!-- This is a page template. A page outputs content just like any other post, and has all the same
+    attributes by default, but you can also customise it to behave differently if you prefer. --}}
+
+{{!-- Everything inside the #post tags pulls data from the page --}}
+{{#post}}
+
+<main class="content" role="main">
+	<header class="page-header contact-header">
+		<h1>Contact.</h1>
+	</header>
+	<section class="page-content">
+		<ul class="contact-items">
+			<li>Email me at <a href="mailto:jakewiesler@gmail.com">jakewiesler@gmail.com</a></li>
+			<li>Follow me on Twitter for daily updates <a href="https://twitter.com/jakewies">@jakewies</a></li>
+			<li>My Github profile <a href="https://github.com/jake-wies">@jake-wies</a></li>
+		</ul>
+
+		<h3>Post Updates</h3>
+		<p>I also have an RSS feed available for those who use aggregator services <a href="http://feeds.feedburner.com/JakeWiesler">here</a></p>
+
+		<h3>Future updates</h3>
+		<p>I've been throwing around the idea of sending out a weekly email to anyone that is interested. The email will consist of resources, articles, awesome projects, things that inspired me, podcasts I'm listening to, etc. Pretty much all of the things. If that is something you're interested in, go ahead and subscribe below! No spam. Promise.</p>
+		{{#if @labs.subscribers}}
+		<section class="gh-subscribe">
+			{{subscribe_form placeholder="Email"}}
+		</section>
+		{{/if}}
+	</section>
+</main>
+
+{{/post}}

@@ -1,0 +1,69 @@
+{{!< default}}
+
+{{!-- The comment above "< default" means - insert everything in this file into
+    the {{{body}}} of the default.hbs template, containing the blog header/footer. --}}
+
+{{!-- Everything inside the #post tags pulls data from the post --}}
+{{#post}}
+
+<main class="content" role="main">
+    <article class="{{post_class}}">
+
+        <header class="post-header">
+            <h1 class="post-title">{{title}}</h1>
+            <div class="post-meta">
+                <section>
+                    <time class="post-date" datetime="{{date format="YYYY-MM-DD"}}"># {{date format="DD MMMM YYYY"}}</time> {{tags prefix=" on "}}
+                </section>
+                <section class="share">
+                    <a class="icon-twitter" href="https://twitter.com/intent/tweet?text={{encode title}}&amp;url={{url absolute="true"}}"
+                        onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                        <span class="hidden">Twitter</span>
+                    </a>
+                    <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}"
+                        onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                        <span class="hidden">Facebook</span>
+                    </a>
+                    <a class="icon-google-plus" href="https://plus.google.com/share?url={{url absolute="true"}}"
+                       onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                        <span class="hidden">Google+</span>
+                    </a>
+                </section>
+            </div>
+        </header>
+
+        <section class="post-content">
+            {{content}}
+        </section>
+
+        <footer class="post-footer">
+
+            {{!-- Email subscribe form at the bottom of the page --}}
+            {{!-- {{#if @labs.subscribers}}
+            <section class="gh-subscribe">
+                <h3 class="gh-subscribe-title">Subscribe to {{@blog.title}}</h3>
+                <p>Get the latest posts delivered right to your inbox.</p>
+                {{subscribe_form placeholder="Email"}}
+                <span class="gh-subscribe-rss">or subscribe <a href="http://feeds.feedburner.com/JakeWiesler">via RSS</a></span>
+            </section>
+            {{/if}} --}}
+
+            {{!-- Links to Previous/Next posts --}}
+            {{!-- <div class="related-posts">
+                <h4>Next Post</h4>
+                {{#next_post}}
+                <a class="read-next-story next" href="{{url}}">{{title}}</a>
+                {{/next_post}}
+            </div> --}}
+
+            <div class="post-bio">
+                <h4>Who am I?</h4>
+                <p>Hey! I'm Jake. I'm a 26 year human and a front-end developer from Fort Lauderdale, Florida. I've taken a huge interest in the world of software and web design over these last few years, especially JavaScript. This is my corner of the interwebs where I write about all my front-end findings.</p>
+            </div>
+
+        </footer>
+
+    </article>
+</main>
+
+{{/post}}

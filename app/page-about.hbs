@@ -1,0 +1,19 @@
+{{!< default}}
+
+{{!-- This is a page template. A page outputs content just like any other post, and has all the same
+    attributes by default, but you can also customise it to behave differently if you prefer. --}}
+
+{{!-- Everything inside the #post tags pulls data from the page --}}
+{{#post}}
+
+<main class="content" role="main">
+	<header class="page-header about-header">
+		<h1>About.</h1>
+	</header>
+	<section class="page-content">
+		{{content}}
+		<p>Have a project you want to discuss? Email me at <a href="mailto:jakewiesler@gmail.com">jakewiesler@gmail.com</a>.</p>
+	</section>
+</main>
+
+{{/post}}
