@@ -1543,7 +1543,6 @@ button {
         width: 85%;
         margin: 0 auto;
         font-size: 0.85em;
-        line-height: 1.65em;
     }
 
     .page-header, .tag-header {
@@ -1765,6 +1764,10 @@ button {
 
     .post-content {
         padding: 12px 6px;
+    }
+
+    .post-thumb .post-content {
+      padding: 12px;
     }
 
     .posts-container .post-title {
