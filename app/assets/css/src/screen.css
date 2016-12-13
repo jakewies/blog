@@ -724,7 +724,7 @@ button {
     display: block;
     margin: 1.75rem 0 0 0;
     font-family: "Open Sans", sans-serif;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     line-height: 2.2rem;
     color: #9EABB3;
 }
@@ -755,10 +755,13 @@ button {
 .post-date {
     display: inline-block;
     margin-right: 8px;
-    padding-right: 12px;
-    border-right: #d5dbde 1px solid;
-    font-size: 1.5rem;
     white-space: nowrap;
+}
+
+.tags {
+  display: inline;
+  padding-left: 8px;
+  border-left: #d5dbde 1px solid;
 }
 
 .user-image {
@@ -964,12 +967,6 @@ button {
         justify-content: space-between;
     -ms-flex-align: start;
         align-items: flex-start;
-}
-
-.post-template .post-date {
-    padding: 0;
-    margin: 0;
-    border: none;
 }
 
 .post-header .share a {

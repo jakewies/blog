@@ -13,8 +13,12 @@
                 <p>{{excerpt words="26"}}...</p>
             </section>
             <footer class="post-meta">
-                <time class="post-date" datetime="{{date format="YYYY-MM-DD"}}"># {{date format="DD MMMM YYYY"}}</time>
-                {{tags prefix=" in "}}
+                <time class="post-date" datetime="{{date format="YYYY-MM-DD"}}">{{date format="MMM Do YYYY"}}</time>
+                {{#if tags}}
+                <div class="tags">
+                  {{tags}}
+                </div>
+                {{/if}}
             </footer>
         </div>
     </article>
