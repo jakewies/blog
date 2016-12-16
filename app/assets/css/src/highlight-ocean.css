@@ -60,10 +60,11 @@
     white-space: pre;
     word-wrap: normal;
     display: block;
-    overflow-x: auto;
-    background: #2b303b;
     color: #c0c5ce;
     padding: 0.5em;
+    width: 80%;
+    max-width: 710px;
+    margin: 0 auto;
 }
 
 .hljs-emphasis {
