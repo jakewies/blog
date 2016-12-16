@@ -10,21 +10,21 @@
 /* Ocean Comment */
 
 .hljs-comment, .hljs-quote {
-    color: #8092A0;
+    color: #41506F;
 }
 
 
 /* Ocean Red */
 
 .hljs-variable, .hljs-template-variable, .hljs-tag, .hljs-name, .hljs-selector-id, .hljs-selector-class, .hljs-regexp, .hljs-deletion {
-    color: #bf616a;
+    color: #7D80DA;
 }
 
 
 /* Ocean Orange */
 
 .hljs-number, .hljs-built_in, .hljs-builtin-name, .hljs-literal, .hljs-type, .hljs-params, .hljs-meta, .hljs-link {
-    color: #d08770;
+    color: #BF795D;
 }
 
 
@@ -38,7 +38,7 @@
 /* Ocean Green */
 
 .hljs-string, .hljs-symbol, .hljs-bullet, .hljs-addition {
-    color: #a3be8c;
+    color: #1B998B;
 }
 
 
@@ -52,7 +52,7 @@
 /* Ocean Purple */
 
 .hljs-keyword, .hljs-selector-tag {
-    color: #b48ead;
+    color: #7D80DA;
 }
 
 .hljs {
@@ -60,11 +60,10 @@
     white-space: pre;
     word-wrap: normal;
     display: block;
-    color: #c0c5ce;
-    padding: 0.5em;
+    color: #41506B;
+    padding: 3rem 2rem;
     width: 80%;
     max-width: 710px;
-    margin: 0 auto;
 }
 
 .hljs-emphasis {

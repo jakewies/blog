@@ -539,17 +539,16 @@ code, tt {
 
 pre {
     box-sizing: border-box;
-    margin: 0 0 1.75em 0;
-    /*width: 100%;*/
+    margin: 3rem 0;
     font-family: Inconsolata, monospace, sans-serif;
     font-size: 0.9em;
     white-space: pre;
     overflow: auto;
     color: #93B7BE;
     position: relative;
-    left: calc(-50vw + 50%);
-    width: 100vw;
-    background: #2b303b;
+    width: 90vw;
+    background: #E0E0E0;
+    border-left: 5px solid #BDBDBD;
 }
 
 pre code, pre tt {
@@ -1624,6 +1623,14 @@ button {
     }
     .thumb-img {
         height: 60px;
+    }
+    .post-template .post-content {
+      width: 90%;
+    }
+    pre {
+        left: calc(-50vw + 50%);
+        width: 100vw;
+        border-left: none;
     }
 }
 
