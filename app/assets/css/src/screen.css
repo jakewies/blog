@@ -494,9 +494,7 @@ hr {
 
 blockquote {
     box-sizing: border-box;
-    margin: 1.75em 0 1.75em -2.2em;
-    padding: 0 0 0 1.75em;
-    border-left: #4A4A4A 0.4em solid;
+    color: #a3a3a3;
 }
 
 blockquote p {
@@ -1025,7 +1023,16 @@ button {
 .post-thumb {
     max-width: 100%;
     padding: 0;
-    transition: opacity 0.2s ease;
+    transition: opacity .2s ease;
+    margin-bottom: 5%;
+}
+
+.post-thumb:after {
+    content: "";
+    display: block;
+    height: 1px;
+    background: linear-gradient(90deg,transparent,rgba(0,0,0,.1),rgba(0,0,0,.1),transparent);
+    margin-top: 2.5%;
 }
 
 .post-thumb:hover {
@@ -1233,21 +1240,14 @@ button {
 
 .page-header, .tag-header {
     padding: 4rem 0;
+    background-color: #485772;
 }
 
 .tag-header {
   margin-bottom: 20px;
 }
 
-.about-header {
-    background-color: #1B998B;
-}
-
-.contact-header {
-    background-color: #485772;
-}
-
-.page-header h1 {
+.page-header h1, .tag-header h1 {
     color: #F7FFF7;
 }
 
@@ -1257,11 +1257,6 @@ button {
     margin: 0 auto;
 }
 
-.tag-header h1 {
-    width: 85%;
-    text-align: left;
-}
-
 .page-content {
     padding: 4rem 0 0;
 }
@@ -1269,10 +1264,6 @@ button {
 .contact-items {
     list-style: none;
     padding-left: 0;
-}
-
-.now-header {
-    background-color: #93B7BE;
 }
 
 .now-date {
@@ -1504,9 +1495,6 @@ button {
    ========================================================================== */
 
 @media only screen and (max-width: 899px) {
-    blockquote {
-        margin-left: 0;
-    }
     .scroll-down, .home-template .main-header:after {
         display: none;
     }
