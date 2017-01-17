@@ -854,7 +854,7 @@ button {
 .post-excerpt p {
     margin: 0;
     font-size: 0.9em;
-    line-height: 1.7em;
+    line-height: 1.85em;
 }
 
 .read-more {
@@ -1136,9 +1136,8 @@ button {
     border-bottom: none;
     padding-bottom: 0;
     position: relative;
-    /*width: 80%;
-    max-width: 710px;*/
     word-wrap: break-word;
+    line-height: 1.85;
 }
 
 
@@ -1667,7 +1666,7 @@ button {
         margin-bottom: 2rem;
         margin-left: 16px;
         margin-right: 16px;
-        line-height: 1.65em;
+        /*line-height: 1.65em;*/
     }
     .post-template .post-date, .page-template .post-date {
         display: inline-block;
